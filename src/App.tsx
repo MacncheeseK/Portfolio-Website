@@ -1,11 +1,11 @@
-import Navbar from "./components/Navbar";
+import Navbar from './components/Navbar';
 
-function App() {
+const App = () => {
   return (
     <div>
-      <Navbar/>
+      <Navbar />
     </div>
   );
-}
+};
 
 export default App;
