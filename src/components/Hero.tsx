@@ -1,13 +1,6 @@
-'use client'
-import{ useScroll, useTransform, motion} from 'framer-motion'
-import { useRef } from 'react';
-
+import Scrolling from "./Scrolling";
 
 export const Hero = () => {
-  const ref= useRef<HTMLSpanElement>(null);
-  const { scrollYProgress } = useScroll({target:ref});
-  const scrollProgress = useTransform(scrollYProgress,[0,1],[0,-5600],)
-
   return (
     <div className="bg-gray-700 h-[5000px]">
       <header className="min-h-[10vh] flex justify-center items-center z-10 p-6 py-28">
@@ -18,14 +11,8 @@ export const Hero = () => {
           think.
         </h1>
       </header>
-      <div className=" fixed top-0 ">
-        <motion.span
-          ref={ref}
-          className="font-Yapari font-bold  text-white text-[15rem] "
-          style={{ x:scrollProgress}}
-        >
-          Welcome
-        </motion.span>
+      <div className="">
+        <Scrolling />
       </div>
     </div>
   );
