@@ -27,7 +27,22 @@ export const Navbar = () => {
           <HamburgerMenu toggleMenu={toggleMenu} />
         </div>
       </nav>
-      <div className="{}"></div>
+      <div className={ isOpen ? 'block': 'hidden'}>
+        <ul className="absolute top-10 bg-white w-full text-center  ">
+          <li>
+            <a href="/">Home</a>
+          </li>
+          <li>
+            <a href="/about">About Me</a>
+          </li>
+          <li>
+            <a href="/projects">Projects</a>
+          </li>
+          <li>
+            <a href="/contact">Contact Me</a>
+          </li>
+        </ul>
+      </div>
     </section>
   );
 };
