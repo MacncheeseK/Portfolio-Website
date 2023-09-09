@@ -28,7 +28,7 @@ export const Navbar = () => {
         </div>
       </nav>
       <div className={ isOpen ? 'block': 'hidden'}>
-        <ul className="absolute top-10 bg-white w-full text-center  ">
+        <ul className="absolute top-10 bg-white w-full text-center gap-4 ">
           <li>
             <a href="/">Home</a>
           </li>
