@@ -1,10 +1,9 @@
 import hamburger from '../assets/hamburger.svg'
-import { motion, useInView } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { useRef } from 'react';
 
 export const HamburgerMenu =( props:{toggleMenu:()=> void })=>{
   const ref =useRef(null)
-  const inView =useInView(ref, {once: true})
   return (
     <div className="mr-8">
       <div>
