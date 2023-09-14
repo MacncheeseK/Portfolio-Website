@@ -9,7 +9,7 @@ export const Navbar = () => {
     setIsOpen((prevIsOpen) => !prevIsOpen);
   }
   useEffect(() => {
-    const hideMenu = isOpen ? [""]
+    const hideMenu = isOpen ? [" overflow-y-hidden h-screen"] : [""];
   })
 
   return (
