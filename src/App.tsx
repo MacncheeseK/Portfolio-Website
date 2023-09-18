@@ -1,6 +1,7 @@
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Projects from "./components/Projects";
+import Contact from "./components/Contact";
 
 const App = () => {
   return (
@@ -11,6 +12,9 @@ const App = () => {
       </section>
       <section>
         <Projects />
+      </section>
+      <section>
+        <Contact/>
       </section>
     </section>
   );
